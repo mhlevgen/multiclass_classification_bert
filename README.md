@@ -1,17 +1,18 @@
 ## Multilabel text classification
 
-1. Data file you can find in `src/data` folder
+1. Data file you can find in `src/data` folder. There is multiclass classification problem
+with 4 classes in total. Classes are balanced.
 2. I trained 2 models: baseline (tf-idf + catboost) and advanced (bert). All training pipeline in 
-`src/train_tfidf_catboost` and `src/train_bert` notebooks
+`src/train_tfidf_catboost.ipynb` and `src/train_bert.ipynb` notebooks
 3. Confusion matrix catboost: 
 
-<img alt="tfidf" src="./tfidf.png" width="200"/>
+<img alt="tfidf" src="./tfidf.png" width="300"/>
 
+4. Confusion matrix bert:
 
-5. Confusion matrix bert:
-![alt text](bert.png)
+<img alt="tfidf" src="./bert.png" width="300"/>
 
-6. I implemented API on flask with catboost model. To launch in use docker container:
+5. I implemented API on flask with catboost model. To launch in use docker container:
 
 `docker build . -t bert:latest`
 
