@@ -3,13 +3,15 @@
 1. Data file you can find in `src/data` folder
 2. I trained 2 models: baseline (tf-idf + catboost) and advanced (bert). All training pipeline in 
 `src/train_tfidf_catboost` and `src/train_bert` notebooks
-3. Confusion matrix catboost:
-![alt text](tfidf.png)
+3. Confusion matrix catboost: 
 
-4. Confusion matrix bert:
+<img alt="tfidf" src="./tfidf.png" width="200"/>
+
+
+5. Confusion matrix bert:
 ![alt text](bert.png)
 
-5. I implemented API on flask with catboost model. To launch in use docker container:
+6. I implemented API on flask with catboost model. To launch in use docker container:
 
 `docker build . -t bert:latest`
 
