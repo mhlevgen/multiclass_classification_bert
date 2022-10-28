@@ -1,0 +1,16 @@
+[packages]
+seaborn = "~=0.12.1"
+pandas = "~=1.4.2"
+numpy = "~=1.22.4"
+catboost = "~=1.0.4"
+scikit-learn = "~=1.1.1"
+jupyter = "~=1.0.0"
+pytorch-lightning = "~=1.7.7"
+transformers = "~=4.22.2"
+flask = "~=2.2.2"
+
+[dev-packages]
+pytest = "~=7.2.0"
+
+[requires]
+python_version = "3.9"
