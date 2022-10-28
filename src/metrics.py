@@ -4,7 +4,7 @@ import seaborn as sns
 from sklearn.metrics import confusion_matrix, roc_auc_score, recall_score, precision_score
 
 
-def confusion_matrix_plot(true, pred, columns) -> None:
+def confusion_matrix_plot(true: np.ndarray, pred: np.ndarray, columns: list[str]) -> None:
     conf_matrix = confusion_matrix(
         np.argmax(true, axis=1),
         np.argmax(pred, axis=1)
