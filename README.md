@@ -2,8 +2,10 @@
 
 1. Data file you can find in `src/data` folder. There is multiclass classification problem
 with 4 classes in total. Classes are balanced.
-2. I trained 2 models: baseline (tf-idf + catboost) and advanced (bert). All training pipeline in 
-`src/train_tfidf_catboost.ipynb` and `src/train_bert.ipynb` notebooks
+2. I trained 2 models: baseline (tf-idf + catboost) and advanced (bert). Training pipelines in 
+`src/train_tfidf_catboost.ipynb` and `src/train_bert.ipynb` notebooks. 
+Both models trained on same train data and evaluated on the same test data.
+
 3. Confusion matrix catboost: 
 
 <img alt="tfidf" src="./tfidf.png" width="300"/>
@@ -12,7 +14,8 @@ with 4 classes in total. Classes are balanced.
 
 <img alt="tfidf" src="./bert.png" width="300"/>
 
-5. I implemented API on flask with catboost model. To launch in use docker container:
+5. Tf idf + catboost has 11 misclassified objects and bert 5 out of 2000 test samples. That was quite predictable.
+6. I implemented API on flask with catboost model. To launch in use docker container:
 
 `docker build . -t bert:latest`
 
