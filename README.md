@@ -33,6 +33,9 @@ curl --request POST 'http://localhost:8889/get-category' \
 ```
 
 7. Production code. 
-Tf-idf model is nearly ready for production, but it's better to implement API with an asynchronous API framework like Tornado. In this way, API will work slightly faster. 
+Tf-idf model is nearly ready for production. Model itself can we enhanced a little bit by searching more optimal
+hyperparameters. Also it's better to implement API with an asynchronous API framework like Tornado. 
+In this way, API will work slightly faster. 
 You should deploy several model pods (better with autoscaling) to fit the desired number of requests.
-BERT model requires several additional steps: you should decide where to inference it: GPU or CPU. GPU is quite expensive. To inference on CPU it's better to use openvino before deployment. The rest steps is similar to tfidf model.
+BERT model requires several additional steps: you should decide where to inference it: GPU or CPU. GPU is quite expensive. 
+To inference on CPU it's better to use openvino before deployment. The rest steps is similar to tfidf model.
